@@ -38,11 +38,22 @@ AWS, Azure and GCP, to Databricks lakehouses, to GPU infrastructure that serves 
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
   <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" />
   <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
+  <br/>
+  <img src="https://img.shields.io/badge/Lakehouse-Medallion%20layers-1B3139?style=for-the-badge&logo=databricks&logoColor=white" alt="Lakehouse, medallion layers" />
+  <img src="https://img.shields.io/badge/Unity%20Catalog-RBAC-1B3139?style=for-the-badge&logo=databricks&logoColor=white" alt="Unity Catalog RBAC" />
+  <img src="https://img.shields.io/badge/Access%20control-RLS%20%C2%B7%20ReBAC-4B5563?style=for-the-badge&logo=letsencrypt&logoColor=white" alt="Row-level security and ReBAC" />
 </p>
 
 Batch and streaming pipelines in **PySpark on Databricks** — ingestion, orchestration and governed
 lakehouse layers (raw → curated) — across **AWS, Azure and GCP**, orchestrated with Azure Data
 Factory, Databricks jobs and AWS Step Functions.
+
+- **Lakehouse design:** medallion layers (raw → curated) per environment, with dev / QA / prod
+  catalogs promoted through Databricks Asset Bundles.
+- **RBAC and governance:** Unity Catalog access defined as code in Terraform — account-level
+  groups per environment and a grant matrix from groups to catalogs and schemas.
+- **Fine-grained access control:** Postgres row-level security for multi-tenant data, and
+  relationship-based access control (ReBAC) with OpenFGA.
 
 ---
 
@@ -117,6 +128,7 @@ Factory, Databricks jobs and AWS Step Functions.
 | Area | Tools |
 | --- | --- |
 | **Data engineering** | PySpark, Databricks (Unity Catalog, Asset Bundles), Delta Lake, Azure Data Factory, SQL, batch and streaming pipelines |
+| **Governance & access** | Unity Catalog RBAC (groups, grants as Terraform), Postgres row-level security, OpenFGA ReBAC |
 | **Cloud** | AWS (Step Functions, S3, IAM), Azure, Google Cloud (GCP) |
 | **MLOps & platforms** | Kubernetes, Docker, Terraform, GPU scheduling (NVIDIA Run:ai concepts, MIG), CI/CD |
 | **Backend** | Python (FastAPI), Go, TypeScript (Node.js, Next.js), PostgreSQL, Redis |
