@@ -35,6 +35,8 @@ AWS, Azure and GCP, to Databricks lakehouses, to GPU infrastructure that serves 
   <img src="https://img.shields.io/badge/Delta%20Lake-00ADD4?style=for-the-badge&logo=delta&logoColor=white" alt="Delta Lake" />
   <img src="https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white" alt="Snowflake" />
   <img src="https://img.shields.io/badge/Azure%20Data%20Factory-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure Data Factory" />
+  <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Apache Airflow" />
+  <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Apache Kafka" />
   <br/>
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
   <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" />
@@ -46,8 +48,8 @@ AWS, Azure and GCP, to Databricks lakehouses, to GPU infrastructure that serves 
 </p>
 
 Batch and streaming pipelines in **PySpark on Databricks** — ingestion, orchestration and governed
-lakehouse layers (raw → curated) — across **AWS, Azure and GCP**, orchestrated with Azure Data
-Factory, Databricks jobs and AWS Step Functions.
+lakehouse layers (raw → curated) — across **AWS, Azure and GCP**, orchestrated with Airflow, Azure
+Data Factory, Databricks jobs and AWS Step Functions, and streamed through Kafka.
 
 - **Lakehouse design:** medallion layers (raw → curated) per environment, with dev / QA / prod
   catalogs promoted through Databricks Asset Bundles.
@@ -128,7 +130,8 @@ Factory, Databricks jobs and AWS Step Functions.
 
 | Area | Tools |
 | --- | --- |
-| **Data engineering** | PySpark, Databricks (Unity Catalog, Asset Bundles), Delta Lake, Snowflake, Azure Data Factory, SQL, batch and streaming pipelines |
+| **Data engineering** | PySpark, Databricks (Unity Catalog, Asset Bundles), Delta Lake, Snowflake, SQL, batch and streaming pipelines |
+| **Orchestration & streaming** | Apache Airflow, Azure Data Factory, Databricks jobs, AWS Step Functions, Apache Kafka |
 | **Governance & access** | Unity Catalog RBAC (groups, grants as Terraform), Postgres row-level security, OpenFGA ReBAC |
 | **Cloud** | AWS (Step Functions, S3, IAM), Azure, Google Cloud (GCP) |
 | **MLOps & platforms** | Kubernetes, Docker, Terraform, GPU scheduling (NVIDIA Run:ai concepts, MIG), CI/CD |
