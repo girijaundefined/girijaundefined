@@ -33,6 +33,7 @@ AWS, Azure and GCP, to Databricks lakehouses, to GPU infrastructure that serves 
   <img src="https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="PySpark" />
   <img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" alt="Databricks" />
   <img src="https://img.shields.io/badge/Delta%20Lake-00ADD4?style=for-the-badge&logo=delta&logoColor=white" alt="Delta Lake" />
+  <img src="https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white" alt="Snowflake" />
   <img src="https://img.shields.io/badge/Azure%20Data%20Factory-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure Data Factory" />
   <br/>
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
@@ -127,7 +128,7 @@ Factory, Databricks jobs and AWS Step Functions.
 
 | Area | Tools |
 | --- | --- |
-| **Data engineering** | PySpark, Databricks (Unity Catalog, Asset Bundles), Delta Lake, Azure Data Factory, SQL, batch and streaming pipelines |
+| **Data engineering** | PySpark, Databricks (Unity Catalog, Asset Bundles), Delta Lake, Snowflake, Azure Data Factory, SQL, batch and streaming pipelines |
 | **Governance & access** | Unity Catalog RBAC (groups, grants as Terraform), Postgres row-level security, OpenFGA ReBAC |
 | **Cloud** | AWS (Step Functions, S3, IAM), Azure, Google Cloud (GCP) |
 | **MLOps & platforms** | Kubernetes, Docker, Terraform, GPU scheduling (NVIDIA Run:ai concepts, MIG), CI/CD |
