@@ -25,6 +25,17 @@ A platform for selling GPU compute and AI inference as a service, designed again
 `Go` `Kubernetes` `controller-runtime` `vCluster` `Next.js` `Supabase` `Terraform`
 · Repository is private — happy to walk through it.
 
+### [ACS SNAP MLOps pipeline](https://github.com/girijaundefined/task-ml-ops)
+End-to-end ML pipeline predicting SNAP (food assistance) receipt from US Census ACS PUMS
+2018–2022 data.
+
+- LightGBM model on 59,048 Arkansas households and 18 features: **90.1% accuracy,
+  ROC-AUC 0.876, 4.64× lift in the top decile**.
+- Reproducible from config: `make` targets, a CLI, a FastAPI serving API, a Docker image, GitHub
+  Actions CI and pre-commit checks.
+
+`Python` `LightGBM` `scikit-learn` `FastAPI` `Docker` `GitHub Actions`
+
 ### StockIQ — India + US fundamental screener
 Screens NSE and US stocks for high-quality compounders using free Yahoo Finance data.
 
