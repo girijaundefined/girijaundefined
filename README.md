@@ -1,6 +1,6 @@
 # Girija Sankar Panda
 
-**Data engineering · MLOps · Platform engineering**
+**Data engineering · MLOps · Platform engineering**Solution Architect
 
 I build data pipelines and the platforms that run them — from ingestion and orchestration on
 Azure and AWS, to Databricks lakehouses, to GPU infrastructure that serves ML workloads.
