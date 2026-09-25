@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=Girija%20Sankar%20Panda&fontColor=ffffff&fontSize=40&fontAlignY=36&desc=Solution%20Architect%20%C2%B7%20Data%20Engineering%20%C2%B7%20MLOps%20%C2%B7%20Platform%20Engineering&descAlignY=58&descSize=16" alt="Girija Sankar Panda — Solution Architect · Data Engineering · MLOps · Platform Engineering" width="100%" />
 
 I build data pipelines and the platforms that run them — from ingestion and orchestration on
-Azure and AWS, to Databricks lakehouses, to GPU infrastructure that serves ML workloads.
+AWS, Azure and GCP, to Databricks lakehouses, to GPU infrastructure that serves ML workloads.
 
 <a href="mailto:girija.undefined@gmail.com"><img src="https://img.shields.io/badge/Email-girija.undefined%40gmail.com-0f2027?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
@@ -15,18 +15,34 @@ Azure and AWS, to Databricks lakehouses, to GPU infrastructure that serves ML wo
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,go,ts,nextjs,react,fastapi&theme=dark" alt="Languages and frameworks" /><br/>
-  <img src="https://skillicons.dev/icons?i=kubernetes,docker,terraform,aws,azure,githubactions&theme=dark" alt="Cloud and platforms" /><br/>
+  <img src="https://skillicons.dev/icons?i=kubernetes,docker,terraform,aws,azure,gcp,githubactions&theme=dark" alt="Cloud and platforms" /><br/>
   <img src="https://skillicons.dev/icons?i=postgres,redis,supabase,linux,git&theme=dark" alt="Data stores and tools" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" alt="Databricks" />
-  <img src="https://img.shields.io/badge/Azure%20Data%20Factory-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure Data Factory" />
-  <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="PySpark" />
   <img src="https://img.shields.io/badge/LightGBM-2E7D32?style=flat-square" alt="LightGBM" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
   <img src="https://img.shields.io/badge/AWS%20Step%20Functions-FF4F8B?style=flat-square&logo=awslambda&logoColor=white" alt="AWS Step Functions" />
 </p>
+
+---
+
+## 🗄️ Data engineering
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="PySpark" />
+  <img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" alt="Databricks" />
+  <img src="https://img.shields.io/badge/Delta%20Lake-00ADD4?style=for-the-badge&logo=delta&logoColor=white" alt="Delta Lake" />
+  <img src="https://img.shields.io/badge/Azure%20Data%20Factory-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure Data Factory" />
+  <br/>
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" />
+  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
+</p>
+
+Batch and streaming pipelines in **PySpark on Databricks** — ingestion, orchestration and governed
+lakehouse layers (raw → curated) — across **AWS, Azure and GCP**, orchestrated with Azure Data
+Factory, Databricks jobs and AWS Step Functions.
 
 ---
 
@@ -100,8 +116,8 @@ Azure and AWS, to Databricks lakehouses, to GPU infrastructure that serves ML wo
 
 | Area | Tools |
 | --- | --- |
-| **Data engineering** | Azure Data Factory, Databricks, PySpark, SQL, Delta Lake, batch and streaming pipelines |
-| **Cloud** | AWS (Step Functions, S3, IAM), Azure |
+| **Data engineering** | PySpark, Databricks (Unity Catalog, Asset Bundles), Delta Lake, Azure Data Factory, SQL, batch and streaming pipelines |
+| **Cloud** | AWS (Step Functions, S3, IAM), Azure, Google Cloud (GCP) |
 | **MLOps & platforms** | Kubernetes, Docker, Terraform, GPU scheduling (NVIDIA Run:ai concepts, MIG), CI/CD |
 | **Backend** | Python (FastAPI), Go, TypeScript (Node.js, Next.js), PostgreSQL, Redis |
 
